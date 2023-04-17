@@ -3,10 +3,10 @@
 ## Apply Token-Based authentication in DRF project using djoser, djangorestframework-simplejwt
 
 Packages to install:
-    django,
-    djangorestframework,
-    djangorestframework_simplejwt,
-    djoser
+    - django
+    - djangorestframework
+    - djangorestframework_simplejwt
+    - djoser
 
 Start project using command:
 ```
