@@ -7,7 +7,7 @@ class UserCreateSerializer(BaseUserCreateSerializer):
         # The order in 'fields' variable
         # defines the order of parameters in the Browsable API
         fields = [
-            'id', 'username', 'first_name', 'last_name', 'email', 'password'
+            'id', 'username', 'birth_date', 'first_name', 'last_name', 'email', 'password'
         ]
 
 
@@ -16,5 +16,5 @@ class UserSerializer(BaseUserSerializer):
         # The order in 'fields' variable
         # defines the order of parameters in the Browsable API
         fields = [
-            'id', 'username', 'first_name', 'last_name', 'email',
+            'id', 'username', 'birth_date', 'first_name', 'last_name', 'email',
         ]
