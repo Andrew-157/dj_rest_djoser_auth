@@ -67,4 +67,4 @@ Djoser provides the following endpoints:
 ```
 
 To be recognized as an authenticated generated token should be provided in request header like this:
-![Authorization](./docs/images/Authorization.png)
+![Authorization](docs/images/Authorization.png)
