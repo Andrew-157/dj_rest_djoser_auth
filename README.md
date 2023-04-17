@@ -66,5 +66,5 @@ Djoser provides the following endpoints:
     /jwt/verify
 ```
 
-To be recognized as an authenticated generated token should be provided in request header like this:
+To be recognized as an authenticated user, generated token should be provided in request header like this(With Modheader extension, for example):
 ![Authorization](docs/images/Authorization.png)
