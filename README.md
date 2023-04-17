@@ -16,8 +16,8 @@ In 'your_project.settings.py':
     ```
     INSTALLED_APPS = [
     ...
-    'djoser',
     'rest_framework',
+    'djoser',
     ]
     ```
 
