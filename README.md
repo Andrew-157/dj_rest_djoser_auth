@@ -34,7 +34,7 @@ In 'your_project.urls.py':
 
 Add following to the 'your_project.settings.py':
 
-    ```
+    ~~~
         REST_FRAMEWORK = {
             'DEFAULT_AUTHENTICATION_CLASSES': (
                 'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -45,4 +45,4 @@ Add following to the 'your_project.settings.py':
             'AUTH_HEADER_TYPES': ('JWT', ),
             'ACCESS_TOKEN_LIFETIME': timedelta(hours=3)
         }
-    ```
+    ~~~
