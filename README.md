@@ -13,3 +13,13 @@ Start project using command:
     django-admin startproject <your_project>
 ```
 
+In 'your_project.settings.py':
+```
+INSTALLED_APPS = [
+    ...
+    #Register djoser and djangorestframework
+    'djoser',
+    'rest_framework',
+]
+```
+
