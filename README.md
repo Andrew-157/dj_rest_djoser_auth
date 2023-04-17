@@ -14,7 +14,7 @@ Start project using command:
 ```
 
 In 'your_project.settings.py':
-```
+```python
 INSTALLED_APPS = [
     ...
     #Register djoser and djangorestframework
@@ -23,3 +23,12 @@ INSTALLED_APPS = [
 ]
 ```
 
+In 'your_project.urls.py':
+```python
+urlpatterns = [
+    ...
+    #Register djoser's urls
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.jwt')),
+]
+```
