@@ -4,10 +4,10 @@
 
 Packages to install:
 ```
-    - django
-    - djangorestframework
-    - djangorestframework_simplejwt
-    - djoser
+    django
+    djangorestframework
+    djangorestframework_simplejwt
+    djoser
 ```
 
 Start project using command:
