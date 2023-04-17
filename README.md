@@ -22,11 +22,13 @@ In 'your_project.settings.py':
     ```
 
 In 'your_project.urls.py':
+    ```
     urlpatterns = [
         ...
         # Register urls from djoser
         path('auth/', include('djoser.urls')),
         path('auth/', include('djoser.urls.jwt')),
     ]
+    ```
 
 Add following to the 'your_project.settings.py':
