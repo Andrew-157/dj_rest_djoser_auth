@@ -68,3 +68,48 @@ Djoser provides the following endpoints:
 
 To be recognized as an authenticated user, generated token should be provided in request header like this(With Modheader extension, for example):
 ![Authorization](docs/images/Authorization.png)
+
+In case you need to change default behavior of Djoser serializers, you need to do the following:
+ - Start app with command:
+    ```
+    python manage.py startapp <your_app>
+    ```
+    - Register 'your_app' in 'your_project.settings.py':
+        ```python
+        INSTALLED_APPS = [
+            ...
+            'your_app',
+        ]
+        ```
+ - Create file 'your_app.serializers.py' and define the desired behavior of serializers
+    through inheritance:
+    ```python
+    from djoser.serializers import UserCreateSerializer as BaseUserCreateSerializer,\
+    UserSerializer as BaseUserSerializer
+
+
+    class UserCreateSerializer(BaseUserCreateSerializer):
+        ...
+        class Meta(BaseUserCreateSerializer.Meta):
+            fields = [
+                ...
+            ]
+
+
+    class UserSerializer(BaseUserSerializer):
+        ...
+        class Meta(BaseUserSerializer.Meta):
+            fields = [
+                ...
+            ]
+
+    ```
+ - Add the following to 'your_project.settings.py':
+    ```python
+    DJOSER = {
+    'SERIALIZERS': {
+        'user_create': 'account.serializers.UserCreateSerializer',
+        'current_user': 'account.serializers.UserSerializer',
+        }
+    }
+    ```
