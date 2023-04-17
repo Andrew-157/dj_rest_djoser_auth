@@ -22,7 +22,7 @@ In 'your_project.settings.py':
     ```
 
 In 'your_project.urls.py':
-    ```python
+    ```
     urlpatterns = [
         ...
         # Register urls from djoser
@@ -32,3 +32,15 @@ In 'your_project.urls.py':
     ```
 
 Add following to the 'your_project.settings.py':
+    ```
+    REST_FRAMEWORK = {
+        'DEFAULT_AUTHENTICATION_CLASSES': (
+            'rest_framework_simplejwt.authentication.JWTAuthentication',
+        ),
+    }
+
+    SIMPLE_JWT = {
+        'AUTH_HEADER_TYPES': ('JWT', ),
+        'ACCESS_TOKEN_LIFETIME': timedelta(hours=3)
+    }
+    ```
