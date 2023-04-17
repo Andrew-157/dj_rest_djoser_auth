@@ -65,3 +65,6 @@ Djoser provides the following endpoints:
     /jwt/refresh/
     /jwt/verify
 ```
+
+To be recognized as an authenticated generated token should be provided in request header like this:
+![Authorization](docs/images/Authorization.png)
