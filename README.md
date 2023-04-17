@@ -33,6 +33,7 @@ In 'your_project.urls.py':
     ```
 
 Add following to the 'your_project.settings.py':
+
     ```
         REST_FRAMEWORK = {
             'DEFAULT_AUTHENTICATION_CLASSES': (
