@@ -22,7 +22,7 @@ In 'your_project.settings.py':
     ```
 
 In 'your_project.urls.py':
-    ```
+    ```python
     urlpatterns = [
         ...
         # Register urls from djoser
