@@ -12,12 +12,14 @@ Start project using command:
     django-admin startproject <your_project>
 
 In 'your_project.settings.py':
+    ```
     INSTALLED_APPS = [
         ...
         # Register djoser, djangorestframework
         'djoser',
         'rest_framework',
     ]
+    ```
 
 In 'your_project.urls.py':
     urlpatterns = [
@@ -28,4 +30,3 @@ In 'your_project.urls.py':
     ]
 
 Add following to the 'your_project.settings.py':
-    
